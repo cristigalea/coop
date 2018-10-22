@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite';
 
-import Demo from './Demo'
+import Demo from './demo'
 import Loading from './shared/Loading';
 
-
-
 class App extends Component {
+
+    static propTypes = {
+        isSpinnerShowing: PropTypes.string
+    }
+
     render() {
         const { isSpinnerShowing } = this.props;
 
         return (
             <div className={css(styles.wrapper)}>
-                {isSpinnerShowing && <Loading message="Content is loading"/>}
+                {isSpinnerShowing && <Loading />}
                 <Demo />
             </div>
         );

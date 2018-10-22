@@ -8,9 +8,9 @@ import {
 } from './constants';
 
 const extractAddressInfo = response => ({
-    region: response.result.region,
-    country: response.result.country,
-    city: response.result.admin_district
+    region: response.result && response.result.region,
+    country: response.result && response.result.country,
+    city: response.result && response.result.admin_district
 });
 
 export const getAddressInfo = code => {
@@ -33,7 +33,7 @@ const extractGithubInfo = response => ({
     name: response.name,
     company: response.company || 'N/A',
     avatar_url: response.avatar_url,
-    url: response.url
+    url: response.html_url
 });
 
 export const getGithubInfo = id => {
