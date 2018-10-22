@@ -14,7 +14,6 @@ class App extends Component {
         return (
             <div className={css(styles.wrapper)}>
                 {isSpinnerShowing && <Loading message="Content is loading"/>}
-                <Loading message="Content is loading"/>
                 <Demo />
             </div>
         );

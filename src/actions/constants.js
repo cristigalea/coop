@@ -1,4 +1,5 @@
 export const SHOW_SPINNER = 'SHOW_SPINNER';
 export const HIDE_SPINNER = 'HIDE_SPINNER';
 
-export const TEST = 'TEST';
+export const GET_ADDRESS_INFO = 'GET_ADDRESS_INFO';
+export const GET_GITHUB_INFO = 'GET_GITHUB_INFO';
