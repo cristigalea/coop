@@ -4,8 +4,6 @@ Demo app for showing a basic react + redux + aphrodite setup
 
 It was created using create-react-app
 
-See it in action at https://cristigalea.github.io/coop
-
 Features 
  - state management with Redux
  - multiple API consumption
