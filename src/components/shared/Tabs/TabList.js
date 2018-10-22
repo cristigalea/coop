@@ -4,7 +4,7 @@ import { StyleSheet, css } from 'aphrodite';
 
 import TabHandle from './TabHandle';
 
-const TabList = ({tabs, selectedTabIndex, handleTabChange}) => {
+const TabList = ({tabs, selectedTabIndex = 0, handleTabChange}) => {
     const handles = tabs.map((tab, index) => {
         
         return (
@@ -27,7 +27,7 @@ const TabList = ({tabs, selectedTabIndex, handleTabChange}) => {
 
 TabList.propTypes = {
     tabs: PropTypes.arrayOf(PropTypes.string).isRequired,
-    selectedTabIndex: PropTypes.number.isRequired,
+    selectedTabIndex: PropTypes.number,
     handleTabChange: PropTypes.func.isRequired
 }
 

@@ -5,7 +5,8 @@ export default class NewToBBanking extends Component {
 
     static propTypes = {
         code: PropTypes.string.isRequired,
-        address: PropTypes.object.isRequired
+        address: PropTypes.object.isRequired,
+        getAddressInfo: PropTypes.func.isRequired
     }
 
     componentDidMount() {

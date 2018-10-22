@@ -5,7 +5,8 @@ export default class LookingToSwitch extends Component {
 
     static propTypes = {
         user: PropTypes.string.isRequired,
-        githubData: PropTypes.object.isRequired
+        githubData: PropTypes.object.isRequired,
+        getGithubInfo: PropTypes.func
     }
 
     componentDidMount() {
